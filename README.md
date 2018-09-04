@@ -15,3 +15,10 @@
 * npm run build .. this will run webpack --config webpack.config.js and build bundle.js
 * npm run start ..this will start express server -> node /server/index.js
 * npm run devstart .. this will start webpack-dev-server and will send back bundle.js. Note webpack-dev-server will create its own internal bundle.js which will not be placed in output folder
+
+
+## Setup tests
+* create a folder __tests__ in server. All our tests will be put here
+* create a test file ingredients_test.js
+* install mocha ```npm install mocha --save```
+* put mocha in package.json scripts section ```scripts{ "test": "mocha"}```

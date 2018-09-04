@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "dependencies": {
     "express": "^4.15.2",
+    "mocha": "^5.2.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.6",
@@ -11,6 +12,7 @@
     "redux": "^3.7.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
@@ -22,7 +24,8 @@
   "scripts": {
     "start": "node server/index.js",
     "build": "webpack --config webpack.config.js",
-    "devstart": "webpack-dev-server"
+    "devstart": "webpack-dev-server",
+    "test": "mocha"
   },
   "babel": {
     "presets": [
